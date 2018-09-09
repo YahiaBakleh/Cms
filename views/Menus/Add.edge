@@ -1,0 +1,44 @@
+@layout('layouts.Admin')
+@section('content')
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-7 col-md-offset-1">
+            <div class="login-panel panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title" style="text-align: right">@FormTitle</h3>
+                </div>
+
+                <div class="panel-body">
+
+                    <form method="post" role="form" enctype="multipart/form-data">
+                        <fieldset>
+                            <p> جميع الأخطاء</p>
+                        </fieldset>
+                        <fieldset>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="اسم القائمة" name="Name" type="text" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="ترتيب القائمة" name="Order" type="text" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" placeholder="الهدف" name="TargetUrl" type="text" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <div class="checkbox" style="float:right;">
+                                    <label style="float:left;">
+                                        <input type="checkbox" name="Publish"> قائمة ظاهرة
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <input type="submit" class="btn btn-lg btn-primary btn-block" value="إضافة" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection

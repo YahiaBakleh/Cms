@@ -1,0 +1,43 @@
+
+
+
+.font1 a ,h1{
+	font-size: 18px;
+	font-family: 'El Messiri', sans-serif;
+}
+
+.font2 a ,h1{
+	font-size: 24px;
+	font-family: 'El Messiri', sans-serif;
+}
+
+
+.fa-angle-double-down {
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+.mb-10 {
+	font-size: 26px;
+}
+
+
+.footer-area {
+	background-color: dimgray;
+}
+
+.color1 {
+	color :white;
+	text-align: right;
+}
+
+
+.single-service {
+	background-color: bisque;
+}
+
+
+.footer-area {
+	padding-top:60px;
+	height: 250px;
+}

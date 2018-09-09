@@ -1,0 +1,43 @@
+input[type=text]{
+    text-align: right; 
+    float: right;
+    margin: 10px 10px 10px 10px;
+}
+input[type=email]{
+    text-align: right; 
+    float: right;
+    margin: 10px 10px 10px 10px;
+}
+input[type=password]{
+    text-align: right; 
+    float: right;
+    margin: 10px 10px 0px 20px;
+}
+input[type=checkbox]{
+    text-align: right; 
+    float: right;
+}
+label{
+    text-align: right; 
+    float: right;
+    margin: 0px 15px 10px 10px;
+}
+
+ ::-webkit-input-placeholder { 
+     /* Chrome/Opera/Safari */
+    text-align: right;
+  }
+   :-moz-placeholder { /* Firefox 19+ */
+    text-align: right;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    text-align: right;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    text-align: right;
+  }
+
+p,span{
+    text-align: right; 
+    float: right;
+}

@@ -1,0 +1,44 @@
+@layout('layouts.Admin')
+
+@section('content')
+<a href="/menus/Add" class="btn btn-outline btn-primary" style="margin-top:20px; float:right;">قائمة جديدة</a>
+
+<table class="table col-lg-5" style="margin-top:30px;">
+    <thead>
+        <tr>
+            <th>رقم</th>
+            <th>الإسم</th>
+            <th>الصفحة الهدف</th>
+            <th>للنشر</th>
+            <th>الترتيب</th>
+        </tr>
+    </thead>
+    <tbody>
+        @each(Menu in Menus)
+            <tr>
+                <td>
+                    {{Menu._id}} 
+                </td>
+                <td>
+                    {{Menu.Name}} 
+                </td>
+                <td>
+                    {{Menu.TargetUrl}}
+                </td>
+                <td>
+                    {{Menu.Order}}
+                </td>
+                <td>
+                    {{Menu.Publsh}}"                    
+                </td>
+
+                <td>
+
+                    <a href="Menus/Edit" asp-route-id="@item.Id" class="btn btn-sm btn-primary">تعديل</a> |
+                    <a asp-page="Menus/Delete" asp-route-id="@item.Id" class="btn btn-sm btn-danger">حذف</a>
+                </td>
+            </tr>
+        @endeach     
+    </tbody>
+</table>
+@endsection
